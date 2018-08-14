@@ -2,13 +2,6 @@
   "name": "deploy-angular-on-heroku",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-  "start": "node server.js",
-  "build": "ng build",
-  "test": "ng test",
-  "lint": "ng lint",
-  "e2e": "ng e2e",
-  "postinstall": "ng build --aot --prod"
   },
   "engines": {
     "node": "8.11.1",
@@ -19,8 +12,6 @@
     "express": "^4.16.3",
     "express-session": "^1.15.6",
     "express.js": "^1.0.0",
-    "mongoose": "^5.2.6",
-    "typescript": "~2.7.2",
-    "core-js": "^2.5.4"
+    "mongoose": "^5.2.6"
   }
 }
