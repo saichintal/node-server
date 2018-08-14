@@ -22,7 +22,7 @@ app.use(session({
 }));
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/webdev-summer2-2018');
+mongoose.connect('mongodb://admmin:admin12@ds215961.mlab.com:15961/heroku_vr0drx76');
 
 const userService = require('./services/user.service.server'); //(app);
 userService(app);
@@ -33,4 +33,8 @@ require('./services/question.service.server')(app);
 require('./services/quiz.service.server')(app);
 require('./services/submission.service.server')(app);
 
-app.listen(3000)
+app.use(express.static('./dist'));
+app.get('/*', function (req, res) {
+ res.sendFile(__dirname + '/dist/index.html');
+});
+app.listen(process.env.PORT || 8080);
