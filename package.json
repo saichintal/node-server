@@ -4,10 +4,14 @@
   "description": "Node server for webdev summer 2 2018",
   "main": "index.js",
   "scripts": {
+    "ng": "ng",
     "start": "node server.js",
     "postinstall": "ng build --aot --prod",
     "heroku-postbuild": "ng build --prod",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
   "engines": {
     "node": "8.11.1",
