@@ -28,6 +28,12 @@
     "express-session": "^1.15.6",
     "express.js": "^1.0.0",
     "mongoose": "^5.2.6",
-    "typescript": "~2.7.2"
+    "typescript": "~2.7.2",
+    "@angular/animations": "^6.1.0",
+    "@angular/common": "^6.1.0",
+    "@angular/compiler": "^6.1.0",
+    "@angular/core": "^6.1.0",
+    "@angular/forms": "^6.1.0",
+    "@angular/http": "^6.1.0"
   }
 }
